@@ -3,10 +3,10 @@ Computational Physics 5070
 May 1, 2022
 Wildfire Cause Classification
 
-Included in this repository are two Jupyter notebooks. Collectively, they contain my project.
-I was not able to upload the SQLite dataset to GitHub because it was too large. Therfore, the 
-dataset should be imported from (https://www.kaggle.com/datasets/rtatman/188-million-us-wildfires)
-before either of the Jupyter notebooks is run.
+NOTE: I was not able to upload the SQLite dataset I use in my project to GitHub because it was too 
+large. Therefore, the dataset should be imported from 
+https://www.kaggle.com/datasets/rtatman/188-million-us-wildfires) before either of the Jupyter
+notebooks is run. 
 
 The first of the notebooks is Wildfire Data Analysis. This notebook includes some preliminary data 
 analysis completed with the goal of exploring the dataset and investigating some of the relevant
