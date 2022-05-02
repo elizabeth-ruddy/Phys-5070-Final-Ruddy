@@ -18,13 +18,15 @@ as I started fairly simple and then added complexity to the model as I went. The
 to the notebook including an unsupervised learning section, a binary classification section which follows 
 the Classification tutorial we did in class, and finally, a random forest classification section. 
 
-The Wildfire_Cause_Classification notebook can be run all the way through but sections of it (such as 
-the hyper-parameters tuning section) will be very computationally expensive. That section takes multiple 
+WARNING: The Wildfire_Cause_Classification notebook can be run all the way through but sections of it (such as 
+the hyper-parameters tuning section) will be very computationally expensive. That section takes around 7 
 hours to run on my laptop. That section could be sped up by increasing n_jobs when calling the 
 RandomSearchCV function. n_jobs = 2 was the most that my laptop could handle without shutting down but 
 other computers may be able to handle more. If you wish to run the entire project quickly, I recommend 
-commenting out the hyperparameter tuning sections. It makes sense that the dataset training, and 
-especially the tuning, takes a long time because the dataset has around 1 million datapoints in it.
+commenting out the hyperparameter tuning sections or decreasing the number of iterations of the random 
+search. This would involve changing n_iter = 20 to n_iter = 2, for example. The reason it takes so long
+is that the dataset comprises around 1 million datapoints, making the training of a complex model like 
+Random Forest fairly computationally expensive.
 
 Note: I tried to make a unit testing suite in a separate notebook/Python file that would test the main
 code base. Unfortunately, I could not figure out a way to unit test the main notebook without re-running
